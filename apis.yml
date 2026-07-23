@@ -1,7 +1,25 @@
 aid: 9slides
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/9slides.png
 name: 9Slides
-description: 9Slides is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 9Slides was a cloud-based presentation platform, founded by Ruchit Garg in 2011, that let
+  users combine slide decks (PowerPoint, PDF, Keynote, Prezi, Excel) with synchronized video and deliver
+  them through an HTML5 player viewable on desktop, tablet, and mobile. It operated on a freemium model,
+  charging for premium features such as an ad-free player, password-protected presentations, and viewer
+  analytics, and later pivoted toward learning and training. Backed by 500 Global, the company was
+  acquired by employee-engagement platform Limeade. The 9slides.com domain no longer serves the product
+  and now resolves to a parked/redirect landing page; no public API, developer portal, SDK, or documentation
+  is currently published.
 url: https://raw.githubusercontent.com/api-evangelist/9slides/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +27,19 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-status-note: Acquired by Limeade; standalone product discontinued, 9slides.com domain parked.
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Presentations
+- Video
+- E-Learning
+- Training
+- Content Management
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +47,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/9slides-domain-security.yml
 - type: Website
   url: https://9slides.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
